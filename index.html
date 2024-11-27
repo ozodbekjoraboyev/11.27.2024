@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(230, 230, 230);
+            padding: 20px;
+            margin: 0 auto;
+        }
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 0 auto;
+
+            margin-top: 30px;
+        }
+        td:hover{
+            background-color: rgba(0, 0, 255, 0.5);
+            color: aliceblue;
+            transition: background-color 0.3s ease-in-out;
+        }
+        td, th {
+            border: 2px solid rgb(245, 0, 0);
+            padding: 10px;            
+        }
+        .forma {
+            width: 60%;
+            display: flex;
+            text-align: center;
+            gap: 10px;
+            margin: 0 auto;
+        }
+        input {
+            width: 250px;
+            height: 30px;
+            padding-left: 10px;
+            border-radius: 10px;
+            border-color: blue;
+        }
+        input:active{
+          border: 1px solid rgb(252, 51, 51);
+        }
+        button {
+            width: 100px;
+            height: 30px;
+            border: none;
+            background-color: rgb(29, 21, 7);
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: blue;
+            transform: scale(0.9);
+        }
+        button:active{
+            transform: scale(1);
+
+        }
+    </style>
+    <form action="" class="forma">
+        <input type="text" placeholder="Ismingizni kiriting">
+        <input type="email" placeholder="Emailni kiriting">
+        <input type="password" placeholder="Parolni kiriting">
+        <button type="submit">Submit</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="./app.js"></script>
+</body>
+</html>
